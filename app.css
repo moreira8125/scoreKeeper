@@ -1,0 +1,45 @@
+#changeName {
+    margin: 3px;
+}
+
+#changeP1Name {
+    height: 25px;
+    margin: 2px;
+}
+
+#changeName button {
+    height: 25px;
+    margin: 2px;
+}
+
+#changeP2Name {
+    height: 25px;
+    margin: 2px;
+}
+
+#table{
+    margin-top: 25px;
+}
+
+#p2Button{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#reset{
+    height: 60px;
+    width: 50px;
+    background-color: #5f0618;
+    border: none;
+    border-radius: 5px;
+}
+
+#reset:hover{
+    background-color: #9E0C29;
+}
+
+button:active{
+box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+transform: scale(.98);
+}
+
