@@ -75,10 +75,6 @@ function reset() {
   }
 }
 
-// MADE BY ME
-
-// Name changing
-
 const changeP1btn = document.querySelector("#changeP1btn");
 const changeP1name = document.querySelector("#changeP1Name");
 const changeP2btn = document.querySelector("#changeP2btn");
@@ -87,12 +83,20 @@ const delete1Btn = document.querySelector("#delete1Btn");
 const delete2Btn = document.querySelector("#delete2Btn");
 
 changeP1btn.addEventListener("click", function () {
-  p1.button.textContent = `+1 ${changeP1name.value}`;
+  if (changeP1name.value === "") {
+    p1.button.textContent = "+1 Player One";
+  } else {
+    p1.button.textContent = `+1 ${changeP1name.value}`;
+  }
   changeP1name.value = "";
 });
 
 changeP2btn.addEventListener("click", function () {
-  p2.button.textContent = `+1 ${changeP2name.value}`;
+  if (changeP2name.value === "") {
+    p2.button.textContent = "+1 Player Two";
+  } else {
+    p2.button.textContent = `+1 ${changeP2name.value}`;
+  }
   changeP2name.value = "";
 });
 
